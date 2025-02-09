@@ -1,0 +1,98 @@
+*{
+    width: 100%;
+    
+}
+
+body {
+    
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+}
+
+nav {
+    position: relative;
+    width: 475px;
+    height: 50px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    background-color: black;
+
+}
+
+nav a{
+    position: relative;
+    display: inline;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #194b4f , #33fffc);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav a:nth-child(1):hover ~ span{
+    left: 0px;
+}
+
+nav a:nth-child(2):hover ~ span{
+    left: 182px;
+}
+
+nav a:nth-child(3):hover ~ span{
+    left: 350px;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+#img1{
+    border-radius: 50%;
+    width: 400px; 
+    height: 400px; 
+    object-fit:cover;
+}
+
+img:hover{
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 255, 0.7);
+}
+
+
+section {
+    clear: both;
+    margin-top: 60px; /* Add margin to avoid overlap with fixed header */
+}
+
+#my-projects {
+    margin-top: 20px; /* Add margin to ensure spacing between sections */
+}
+
+
